@@ -34,7 +34,10 @@ var languages = {
     "C#": cs
 };
 
-// Function to pick a random element from the dictionary
+document.body.innerHTML = ""
+document.body.appendChild(languages)
+
+/*// Function to pick a random element from the dictionary
 function pickRandomLanguage() {
     var keys = Object.keys(languages);
     var randomKey = keys[Math.floor(Math.random() * keys.length)];
@@ -48,4 +51,4 @@ function pickRandomLanguage() {
 }
 
 // Call the function to pick and display a random language
-pickRandomLanguage();
+pickRandomLanguage();*/
