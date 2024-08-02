@@ -43,8 +43,6 @@ function pickRandomLanguage() {
     // Output key and value
     document.body.innerHTML = ""; // Clear previous output
     document.body.appendChild(randomElement); // Append the image
-    document.body.appendChild(document.createElement("br")); // Line break
-    document.body.appendChild(document.createTextNode(randomKey)); // Output the key
 }
 
 // Call the function to pick and display a random language
