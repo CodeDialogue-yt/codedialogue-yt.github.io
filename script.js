@@ -2,27 +2,34 @@
 var python = document.createElement("img");
 python.src = "python.png";
 python.alt = "Python";
+python.classList.add(center)
 
 var js = document.createElement("img");
 js.src = "javascript.png";
 js.alt = "JavaScript";
+js.classList.add(center)
 
 var java = document.createElement("img");
 java.src = "java.png";
-js.alt = "Java";
+java.alt = "Java";
+java.classList.add(center)
 
 // Create image elements
 var c = document.createElement("img");
 c.src = "c.png";
 c.alt = "C";
+c.classList.add(center)
 
 var cpp = document.createElement("img");
 cpp.src = "cpp.png";
 cpp.alt = "C++";
+cpp.classList.add(center)
 
 var cs = document.createElement("img");
 cs.src = "cs.png";
 cs.alt = "C#";
+cs.classList.add(center)
+
 
 // Dictionary with programming languages
 var languages = {
