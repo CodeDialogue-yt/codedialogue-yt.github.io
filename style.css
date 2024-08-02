@@ -1,5 +1,21 @@
+body {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Center content vertically */
+    height: 100vh;           /* Full viewport height */
+    margin: 0;               /* Remove default margin */
+    background-color: #f0f0f0; /* Optional: background color for better contrast */
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center;     /* Center image vertically */
+}
+.image-container img {
+    max-width: 100px; /* Optional: adjust size as needed */
+    height: auto;     /* Maintain aspect ratio */
+}
 html {
-    height: 100%;
     width: 100%;
-    
-  }
+    height: 100%;
+}
