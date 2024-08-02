@@ -17,7 +17,7 @@ c.src = "c.png";
 c.alt = "C";
 
 var cpp = document.createElement("img");
-cpp.src = "cpppng";
+cpp.src = "cpp.png";
 cpp.alt = "C++";
 
 var cs = document.createElement("img");
