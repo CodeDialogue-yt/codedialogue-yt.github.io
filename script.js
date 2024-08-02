@@ -11,11 +11,27 @@ var java = document.createElement("img");
 java.src = "java.png";
 js.alt = "Java";
 
+// Create image elements
+var c = document.createElement("img");
+c.src = "c.png";
+c.alt = "C";
+
+var cpp = document.createElement("img");
+cpp.src = "c++.png";
+cpp.alt = "C++";
+
+var cs = document.createElement("img");
+cs.src = "c#.png";
+cs.alt = "C#";
+
 // Dictionary with programming languages
 var languages = {
     "Python": python,
     "JavaScript": js,
-    "Java": java
+    "Java": java,
+    "C": c,
+    "C++": cpp,
+    "C#": cs
 };
 
 // Function to pick a random element from the dictionary
