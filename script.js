@@ -17,11 +17,11 @@ c.src = "c.png";
 c.alt = "C";
 
 var cpp = document.createElement("img");
-cpp.src = "c++.png";
+cpp.src = "cpppng";
 cpp.alt = "C++";
 
 var cs = document.createElement("img");
-cs.src = "c#.png";
+cs.src = "cs.png";
 cs.alt = "C#";
 
 // Dictionary with programming languages
