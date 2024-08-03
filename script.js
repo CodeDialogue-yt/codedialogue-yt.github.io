@@ -1,5 +1,4 @@
 // Create image elements
-// Create image elements
 const python = createImage("python.png", "Python");
 const js = createImage("javascript.png", "JavaScript");
 const java = createImage("java.png", "Java");
@@ -73,7 +72,7 @@ function check() {
     if (guess in lowerCaseLanguages) {
         const newRow = tableBody.insertRow();
         newRow.insertCell(0).innerHTML = guessNum;
-        newRow.insertCell(1).innerHTML = guess.charAt(0).toUpperCase() + guess.slice(1); // Capitalize the first letter
+        newRow.insertCell(1).innerHTML = Object.keys(languages).find(key => key.toLowerCase() === guess); // Find and display the original key
         newRow.insertCell(2).innerHTML = lowerCaseLanguages[guess][1];
 
         if (guess === currentLanguageKey.toLowerCase()) {
