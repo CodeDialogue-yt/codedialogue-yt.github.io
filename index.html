@@ -12,15 +12,30 @@
   <div class="image-container" id="imageContainer">
     <!-- Image will be inserted here by JavaScript -->
   </div>
-  <formw class="guess-form" id="guessForm">
+
+  <form class="guess-form" id="guessForm">
     <label for="langGuess">Programming language?</label>
     <input type="text" id="langGuess" name="langGuess" placeholder="Enter your guess">
-    <input type="submit" value="Submit Guess" onclick="check()">
+    <input type="submit" value="Submit Guess">
   </form>
+
   <p id="guessed"></p>
+
   <table id="guesses">
+    <thead>
+      <tr>
+        <th>Guess</th>
+        <th>Programming Language</th>
+        <th>Monthly Views</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Guesses will be appended here -->
+    </tbody>
   </table>
-  <input type="submit" value="Restart Game" onclick="restart()">
+
+  <button onclick="restart()">Restart Game</button>
+
   <script src="script.js"></script>
 </body>
 
