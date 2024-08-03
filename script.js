@@ -1,4 +1,5 @@
 
+
 var python = document.createElement("img");
 python.src = "python.png";
 python.alt = "Python";
@@ -44,16 +45,16 @@ var element = "Python"
 // Dictionary with programming languages
 // Dictionary with programming languages and their view counts
 var languages = {
-    "Python": [python, 450000],
-    "JavaScript": [js, 500000],
-    "Java": [java, 300000],
-    "C": [c, 250000],
-    "C++": [cpp, 200000],
-    "C#": [cs, 180000],
-    "PHP": [php, 140000],
-    "Ruby": [ruby, 100000],
-    "Swift": [swift, 120000],
-    "TypeScript": [ts, 150000]
+    "Python": [python, 450_000],
+    "JavaScript": [js, 500_000],
+    "Java": [java, 300_000],
+    "C": [c, 250_000],
+    "C++": [cpp, 200_000],
+    "C#": [cs, 180_000],
+    "PHP": [php, 140_000],
+    "Ruby": [ruby, 100_000],
+    "Swift": [swift, 120_000],
+    "TypeScript": [ts, 150_000]
 };
 
 // Variable to store the current language being guessed
@@ -114,8 +115,6 @@ function check() {
         newRow.insertCell(0).innerHTML = guessNum;
         newRow.insertCell(1).innerHTML = order[index];
         newRow.insertCell(2).innerHTML = lowerCaseLanguages[guess][1];
-        alert(Math.abs(lowerCaseLanguages[guess][1] - lowerCaseLanguages[currentLanguageKey.toLowerCase()][1]) === 100000)
-        alert(guess === currentLanguageKey.toLowerCase())
         if (guess === currentLanguageKey.toLowerCase()) {
 
             document.getElementById("langGuess").value = "";
