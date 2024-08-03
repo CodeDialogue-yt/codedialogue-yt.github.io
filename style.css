@@ -72,7 +72,7 @@ body {
 }
 
 /* Centered submit button styling */
-.guess-form input[type="submit"], .button {
+.guess-form input[type="submit"]{
   padding: 10px;
   border: none;
   background-color: #28a745;
@@ -85,9 +85,23 @@ body {
   /* Center the button */
   display: block;
 }
-
-
-.guess-form input[type="submit"]:hover,.button:hover {
+.button {
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 70%;
+  /* Adjust width as needed */
+  margin: 0 auto;
+  /* Center the button */
+  display: block;
+}
+.button:hover {
+  background-color: #268c3e;
+}
+.guess-form input[type="submit"]:hover {
   background-color: #268c3e;
 }
 
