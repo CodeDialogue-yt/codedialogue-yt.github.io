@@ -1,21 +1,106 @@
+/* Reset some basic styles */
+html,
 body {
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center;     /* Center content vertically */
-    height: 100vh;           /* Full viewport height */
-    margin: 0;               /* Remove default margin */
-    background-color: #f0f0f0; /* Optional: background color for better contrast */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  /* Background color for better contrast */
+  color: white;
+  box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  justify-content: flex-start;
+  /* Align content to the top */
+  align-items: center;
+  /* Center content horizontally */
+  height: 100vh;
+  /* Full viewport height */
+}
+
+/* Container for the image */
 .image-container {
-    display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center;     /* Center image vertically */
+  margin-top: 20px;
+  /* Optional: add some top margin */
 }
-.image-container img {
-    max-width: 100px; /* Optional: adjust size as needed */
-    height: auto;     /* Maintain aspect ratio */
+
+/* Style for the image inside the container */
+#imageContainer img {
+  max-width: 100%;
+  /* Optional: adjust size as needed */
+  height: auto;
+  /* Maintain aspect ratio */
 }
-html {
-    width: 100%;
-    height: 100%;
+
+/* Styling the form */
+.guess-form {
+  margin-top: 20px;
+  /* Space between image and form */
+  max-width: 500px;
+  /* Adjust as needed */
+  padding: 20px;
+  background-color: #0d0d0d;
+  /* Matching the background */
+  color: white;
+  text-align: center;
+  /* Center form content */
+}
+
+.guess-form label,
+.guess-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.guess-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #0d0d0d;
+  color: white;
+  border-radius: 4px;
+}
+
+.guess-form input[type="text"]::placeholder {
+  color: #999;
+}
+
+/* Centered submit button styling */
+.guess-form input[type="submit"] {
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 70%;
+  /* Adjust width as needed */
+  margin: 0 auto;
+  /* Center the button */
+  display: block;
+}
+
+.guess-form input[type="submit"]:hover {
+  background-color: #268c3e;
+}
+
+table {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }

@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Prolordle</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <p id="displayImage"></p>
 </head>
 
 <body>
-    <div class="image-container" id="imageContainer"></div>
-  <script src="script.js"></script>
+  <div class="image-container" id="imageContainer">
+    <!-- Image will be inserted here by JavaScript -->
+  </div>
+
+  <formw class="guess-form" id="guessForm">
+    <label for="langGuess">Programming language?</label>
+    <input type="text" id="langGuess" name="langGuess" placeholder="Enter your guess">
+    <input type="submit" value="Submit Guess" onclick="check()">
+    </form>
+    <p id="guessed"></p>
+    <table id="guesses">
+    </table>
+    <input type="submit" value="Restart Game" onclick="restart()">
+    <script src="script.js"></script>
 </body>
 
 </html>
