@@ -1,4 +1,5 @@
 // Create image elements
+// Create image elements
 const python = createImage("python.png", "Python");
 const js = createImage("javascript.png", "JavaScript");
 const java = createImage("java.png", "Java");
